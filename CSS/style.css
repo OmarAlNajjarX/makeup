@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: var(--black);
+  overflow-x: hidden;
+}
+
+/*CSS variables*/
+:root {
+  --black: #000000;
+  --red: #ff0000;
+  --blue: #0000ff;
+  --green: #00ff00;
+  --gold: #a67e17;
+  --silver: #bdc3c7;
+
+}
+
+/*Fonts
+font-family: 'Gorditas', cursive;
+font-family: 'Libre Barcode 128 Text', cursive;
+font-family: 'Major Mono Display', monospace;
+font-family: 'Rubik', sans-serif;
+font-family: 'Sail', cursive;
+font-family: 'Zilla Slab Highlight', cursive;
+*/
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #202020;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+/*The down button container*/
+.down{
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(circle, #202020, #1a1a1a, #141414, #0b0b0b, #000000);
+}
+
+/*The down button*/
+.fa-caret-down {
+  font-size: 40px;
+  color: var(--gold);
+}
+
+
+/*Features section*/
+.features-container {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features {
+  position: absolute;
+  color: white;
+  position: sticky;
+  display: inline-block;
+  margin-top: 100px;
+  font-size: large;
+  color :var(--silver);
+
+}
+
+/*The title of features*/
+.features > p {
+  font-size: 60px;
+  font-family: "Major Mono Display", monospace;
+  text-transform: capitalize;
+  display: inline-block;
+}
+
+.features-container ul li span {
+  font-size: x-large;
+  text-transform: capitalize;
+}
+
+.features-container ul li span.fast {
+  font-family: "Zilla Slab Highlight", cursive;
+}
+
+.features-container ul li span.prices {
+  font-family: "Libre Barcode 128 Text", cursive;
+  font-size: xx-large;
+}
+
+/*In order to make the box of the colors*/
+.box {
+  position: absolute;
+  display: inline-flex;
+  height: 10px;
+}
+
+.box div {
+  width: 5px;
+  height: 5px;
+  border-radius: 150px;
+  display: inline-block;
+  bottom: 0;
+}
+
+.red {
+  background: var(--red);
+}
+.blue {
+  background: var(--blue);
+}
+.green {
+  background: var(--green);
+}
+
+/*About section*/
+.about-section {
+  display: flex;
+  transition: 0.2s;
+  flex-direction: row;
+  flex-wrap: wrap;
+ 
+}
+
+.certificate-2 {
+  background-image: url(../images/certificate2.jpg);
+  background-position: center;
+  height: 500px;
+  width: 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.certificate-1 {
+  background-image: url(../images/certificate1.jpg);
+  background-position: center;
+  height: 500px;
+  width: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.about {
+  width: 60%;
+  height: 500px;
+  background: var(--gold);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+
+font-family: 'Major Mono Display', monospace;
+
+
+}
+
+
+.border-radius-container {
+  height: 500px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.border-radius-object {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 37% 63% 64% 36% / 53% 46% 54% 47%;
+  background-image: linear-gradient(
+    to right top,
+    #d3a020,
+    #b68a1b,
+    #9b7516,
+    #806012,
+    #664c0d
+  );
+}
+
+/*Card section*/
+.card-section {
+  position: relative;
+  height: 100vh;
+  background: #202020;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.card {
+  width: 100%;
+  transition: 0.2s;
+  background-image: url(../images/card.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0px;
+}
+
+
+/*Social media section*/
+.social-media {
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  background-color: #000000;
+  align-items: center;
+}
+.fa-facebook , .fa-instagram {
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  border-radius: 150px;
+  color: white;
+  padding-top: 10px;
+  transition: 0.2s;
+  color: var(--gold);
+}
+
+.fa:hover {
+  color: white;
+ }
+
